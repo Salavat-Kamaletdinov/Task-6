@@ -52,14 +52,5 @@ public class WebConfig implements WebMvcConfigurer {
         registry.viewResolver(resolver);
     }
 
-    @Bean(name = "cars")
-    public List<Car> createCars() {
-        List<Car> listCars = new ArrayList<>();
-        listCars.add(new Car("BMW","Blue", 2000));
-        listCars.add(new Car("Audi","Red", 3000));
-        listCars.add(new Car("Ford","Green", 4000));
-        listCars.add(new Car("Mercedes","Yellow", 5000));
-        listCars.add(new Car("Volvo","Black", 6000));
-        return listCars;
-    }
+
 }
